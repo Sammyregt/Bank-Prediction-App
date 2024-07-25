@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Liability to Asset Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">Liability to asset prediction for Banks</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the following parameters </div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="CustomerSince"><p class="font-weight-bold">CustomerSince</p></label>
+              <input type="text" name="CustomerSince">
+              <small id="CSHelp" class="form-text text-muted">Enter the number of years the customer has been with the bank</small>
+              </div>
+
+              <div class="form-group">
+                <label for="HighestSpend"><p class="font-weight-bold">HighestSpend</p></label>
+                <input type="text" name="HighestSpend">
+                <small id="HSHelp" class="form-text text-muted">Enter the highest spent amount in million dollars so far in one transaction</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="HiddenScore"><p class="font-weight-bold">HiddenScore</p></label>
+                  <input type="text" name="HiddenScore">
+                  <small id="HSHelp" class="form-text text-muted">Enter on a scale of 1 to 4, the score associated to the customer by the bank as an IP </small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="MonthlyAverageSpend"><p class="font-weight-bold">MonthlyAverageSpend</p></label>
+                    <input type="text" name="MonthlyAverageSpend">
+                    <small id="MASHelp" class="form-text text-muted">Enter the customer’s monthly average spend so far (in million dollars)</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Level"><p class="font-weight-bold">Level</p></label>
+                      <input type="text" name="Level">
+                      <small id="LevelHelp" class="form-text text-muted">Enter on a scale of 1 to 3 the level associated to the customer by the bank as an IP</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Montage"><p class="font-weight-bold">Montage</p></label>
+                        <input type="text" name="Montage">
+                        <small id="MontageHelp" class="form-text text-muted">Enter the dollar amount for Montage with the bank</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Security"><p class="font-weight-bold">Security</p></label>
+                            <input type="text" name="Security">
+                            <small id="SecurityHelp" class="form-text text-muted">Enter 1 if the Customer has security asset with the bank and 0 if not</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="FixedDepositAccount"><p class="font-weight-bold">FixedDepositAccount</p></label>
+                                <input type="text" name="FixedDepositAccount">
+                                <small id="FDAHelp" class="form-text text-muted">Enter 1 if the Customer has fixed deposit account and 0 if not</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="InternetBanking"><p class="font-weight-bold">InternetBanking</p></label>
+                                    <input type="text" name="InternetBanking">
+                                    <small id="IBHelp" class="form-text text-muted">Enter 1 if the customer use Internet Banking and 0 if not</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="CreditCard"><p class="font-weight-bold">CreditCard</p></label>
+                                        <input type="text" name="CreditCard">
+                                        <small id="CreditCardHelp" class="form-text text-muted">Enter 1 if the customer use bank's credit card and 0 if not</small>
+                                        </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
