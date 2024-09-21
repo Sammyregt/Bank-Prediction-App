@@ -9,18 +9,25 @@
     <h1><div style="text-align:center"><font color="blue">Prediction Result</font></div></h1>
     <hr>
     <div class="card text-center" style="width:21.5em;margin:0 auto;">
-      <div class="card-body">
-        <!-- <p class="card text"><h1><font color="blue">${{prediction}}</font></h1></p> -->
-         <!-- <div id="prediction">prediction</div> -->
+      <div class="result" id="result">
+        {% if prediction == 1 %}
+            Prediction: 1 - The customer passed!
+        {% else %}
+            Prediction: 0 - The customer failed!
+        {% endif %}
+        </div>
+      <!--<div class="card-body">
+        <p class="card text"><h1><font color="blue">${{prediction}}</font></h1></p>
+         <div id="prediction">prediction</div> -->
          <!-- <input type="text" id="inputValue" placeholder="prediction"> -->
-         <div id="predict" data-value="prediction"></div>
+         <!-- <div id="predict" data-value="prediction"></div>
         <button onclick="predictResult()">Predict</button>
-         <div id="result"></div>
+         <div id="result"></div> -->
         </div>
         </div>
 
         <!-- Link to the JavaScript file -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 
 </html>

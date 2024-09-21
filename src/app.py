@@ -10,7 +10,7 @@ app = Flask(__name__)
 #def test():
 #    return "Flask is being used for development"
 
-ml_open = open('../model/finalized_model.pkl', 'rb')
+ml_open = open('finalized_model.pkl', 'rb')
 ml_model = pickle.load(ml_open)
 #ml_model = joblib.load(mul_reg)
 
@@ -65,4 +65,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")
